@@ -63,7 +63,8 @@ export default function HomeScreen({ navigation }) {
                 </StyledButton>
 
                 <StyledButton
-                    className='rounded-lg p-5 bg-neutral-100 bg-opacity-50 text-neutral-900 justify-between w-64 flex flex-row justify-between items-center rounded-lg'>
+                    className='rounded-lg p-5 bg-neutral-100 bg-opacity-50 text-neutral-900 justify-between w-64 flex flex-row justify-between items-center rounded-lg'
+                    onPress={() => navigation.navigate('SpanishLanding')}>
                     <StyledText style={{fontFamily: 'Lato_400Regular'}}
                                 className='table-cell align-top'>Español</StyledText>
 

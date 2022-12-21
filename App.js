@@ -11,10 +11,22 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 // Pages
 import HomeScreen from './screens/HomeScreen';
+
+// English Pages
 import EnglishLandingScreen from './screens/en/LandingScreen';
 import EnglishStepByStep from './screens/en/StepByStep';
 import EnglishKeyBoxCode from './screens/en/KeyBoxCode';
 import EnglishMissingKeyBox from './screens/en/MissingKeyBox';
+import EnglishCarLocated from './screens/en/CarLocated';
+import EnglishAfterOpeningTheBox from './screens/en/AfterOpeningTheBox';
+
+// Spanish Pages
+import SpanishLandingScreen from './screens/es/LandingScreen';
+import SpanishStepByStep from './screens/es/StepByStep';
+import SpanishKeyBoxCode from './screens/es/KeyBoxCode';
+import SpanishMissingKeyBox from './screens/es/MissingKeyBox';
+import SpanishCarLocated from './screens/es/CarLocated';
+import SpanishAfterOpeningTheBox from './screens/es/AfterOpeningTheBox';
 
 // Views
 const StyledView = styled(View);
@@ -47,11 +59,21 @@ export default function App() {
             }}>
                 <Stack.Screen name="HomaScreen" component={HomeScreen}/>
 
-                {/* --- Pages --- */}
+                {/* --- English Pages --- */}
                 <Stack.Screen name="EnglishLanding" component={EnglishLandingScreen}/>
                 <Stack.Screen name="EnglishStepByStep" component={EnglishStepByStep}/>
                 <Stack.Screen name="EnglishKeyBoxCode" component={EnglishKeyBoxCode}/>
                 <Stack.Screen name="EnglishMissingKeyBox" component={EnglishMissingKeyBox}/>
+                <Stack.Screen name="EnglishAfterOpeningTheBox" component={EnglishAfterOpeningTheBox}/>
+                <Stack.Screen name="EnglishCarLocated" component={EnglishCarLocated}/>
+
+                {/* --- Spanish Pages --- */}
+                <Stack.Screen name="SpanishLanding" component={SpanishLandingScreen}/>
+                <Stack.Screen name="SpanishStepByStep" component={SpanishStepByStep}/>
+                <Stack.Screen name="SpanishKeyBoxCode" component={SpanishKeyBoxCode}/>
+                <Stack.Screen name="SpanishMissingKeyBox" component={SpanishMissingKeyBox}/>
+                <Stack.Screen name="SpanishAfterOpeningTheBox" component={SpanishAfterOpeningTheBox}/>
+                <Stack.Screen name="SpanishCarLocated" component={SpanishCarLocated}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

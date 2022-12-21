@@ -1,13 +1,11 @@
-import * as React from 'react';
+import React from "react";
 import Svg, {
     Path
 } from 'react-native-svg';
-import {TouchableOpacity, Text, Image, View, StyleSheet, Button} from 'react-native';
+import {TouchableOpacity, Text, Image, View} from 'react-native';
 import {styled} from "nativewind";
-import {useFonts, LibreFranklin_800ExtraBold} from '@expo-google-fonts/libre-franklin';
-
-import {Video} from 'expo-av';
-
+import {useFonts, LibreFranklin_800ExtraBold, LibreFranklin_600SemiBold} from '@expo-google-fonts/libre-franklin';
+import {Lato_400Regular, Lato_300Light} from '@expo-google-fonts/lato';
 
 const StyledView = styled(View);
 const StyledButton = styled(TouchableOpacity, 'rounded-lg p-4 bg-neutral-100 bg-opacity-50 text-neutral-900 justify-between w-80');
@@ -16,12 +14,10 @@ const StyledButton = styled(TouchableOpacity, 'rounded-lg p-4 bg-neutral-100 bg-
 const StyledText = styled(Text, 'font-normal text-base text-neutral-900');
 const StyledBoldTitle = styled(Text, 'font-extrabold text-5xl text-neutral-900');
 
-export default function EnglishStepByStep({navigation}) {
-    const video = React.useRef(null);
-    const [status, setStatus] = React.useState({});
-
+export default function EnglishCarLocated({navigation}) {
     let [fontsLoaded] = useFonts({
         LibreFranklin_800ExtraBold,
+        Lato_400Regular,
     });
 
     if (!fontsLoaded) {
@@ -54,31 +50,22 @@ export default function EnglishStepByStep({navigation}) {
             </StyledView>
 
             <StyledView className='h-full flex justify-center items-center space-y-3 max-w-screen-md mx-auto'>
-                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}} className='mb-8'>
-                    Step-By-Step Guide
+                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}} className='text-left'>
+                    Where is my car located?
                 </StyledBoldTitle>
 
-                <Video
-                    ref={video}
-                    style={styles.video}
-                    source={{
-                        uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
-                    }}
-                    useNativeControls
-                    shouldPlay
-                    resizeMode="contain"
-                    isLooping
-                    onPlaybackStatusUpdate={status => setStatus(() => status)}
-                />
+                <StyledText>
+                    Sed quisque accumsan vulputate nulla nisi a quis cursus. Purus sapien maecenas morbi vulputate
+                    cursus a proin luctus. In suspendisse vitae sed mi mattis diam nec nulla. Id sit et erat gravida.
+                    Quam cursus egestas cum ultrices donec lectus.
+                    Ut scelerisque diam leo amet tellus aliquam sagittis tellus. At tellus ullamcorper vulputate
+                    imperdiet scelerisque nibh mauris amet. Massa rhoncus dui arcu tincidunt id. Nibh nam iaculis enim
+                    purus fusce consectetur sit egestas nulla. Facilisi lectus tellus pharetra mauris hendrerit ultrices
+                    malesuada metus. Et vestibulum lacinia adipiscing sed a faucibus convallis convallis. Eu tellus
+                    etiam a nisi luctus. Odio nulla est diam tincidunt et gravida id leo nisi. Risus lorem pharetra in
+                    lacus nisl vitae sed augue in. Aliquam sed sapien vitae eros massa.
+                </StyledText>
             </StyledView>
         </StyledView>
     );
 }
-
-const styles = StyleSheet.create({
-    video: {
-        alignSelf: 'center',
-        width: 820,
-        height: 400,
-    }
-});

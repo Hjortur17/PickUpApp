@@ -17,7 +17,7 @@ const StyledText = styled(Text, 'font-normal text-base text-neutral-900');
 const StyledSubtitle = styled(Text, 'font-semibold text-lg text-neutral-900');
 const StyledBoldTitle = styled(Text, 'font-extrabold text-5xl text-neutral-900');
 
-export default function SpanishStepByStep({navigation}) {
+export default function GermanStepByStep({navigation}) {
     const video = React.useRef(null);
     const [status, setStatus] = React.useState({});
 
@@ -50,17 +50,17 @@ export default function SpanishStepByStep({navigation}) {
                             d="M231.536 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273H436c6.627 0 12-5.373 12-12v-10c0-6.627-5.373-12-12-12H60.113L238.607 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"/>
                     </Svg>
 
-                    <StyledText style={{fontFamily: 'Lato_400Regular'}}>Retroceder</StyledText>
+                    <StyledText style={{fontFamily: 'Lato_400Regular'}}>Geh zurück</StyledText>
                 </StyledButton>
             </StyledView>
 
             <StyledView className='h-full flex justify-center items-center space-y-3 max-w-screen-md mx-auto'>
                 <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}}>
-                    Guía paso por paso
+                    Schritt für Schritt Anleitung
                 </StyledBoldTitle>
 
                 <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pb-8'>
-                    El video esta en ingles
+                    Das Video ist auf Englisch
                 </StyledSubtitle>
 
                 <Video

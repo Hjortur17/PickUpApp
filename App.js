@@ -36,6 +36,14 @@ import FrenchMissingKeyBox from './screens/fr/MissingKeyBox';
 import FrenchCarLocated from './screens/fr/CarLocated';
 import FrenchAfterOpeningTheBox from './screens/fr/AfterOpeningTheBox';
 
+// German Pages
+import GermanLandingScreen from './screens/de/LandingScreen';
+import GermanStepByStep from './screens/de/StepByStep';
+import GermanKeyBoxCode from './screens/de/KeyBoxCode';
+import GermanMissingKeyBox from './screens/de/MissingKeyBox';
+import GermanCarLocated from './screens/de/CarLocated';
+import GermanAfterOpeningTheBox from './screens/de/AfterOpeningTheBox';
+
 // Views
 const StyledView = styled(View);
 const StyledButton = styled(TouchableOpacity);
@@ -90,6 +98,14 @@ export default function App() {
                 <Stack.Screen name="FrenchMissingKeyBox" component={FrenchMissingKeyBox}/>
                 <Stack.Screen name="FrenchAfterOpeningTheBox" component={FrenchAfterOpeningTheBox}/>
                 <Stack.Screen name="FrenchCarLocated" component={FrenchCarLocated}/>
+
+                {/* --- German Pages --- */}
+                <Stack.Screen name="GermanLanding" component={GermanLandingScreen}/>
+                <Stack.Screen name="GermanStepByStep" component={GermanStepByStep}/>
+                <Stack.Screen name="GermanKeyBoxCode" component={GermanKeyBoxCode}/>
+                <Stack.Screen name="GermanMissingKeyBox" component={GermanMissingKeyBox}/>
+                <Stack.Screen name="GermanAfterOpeningTheBox" component={GermanAfterOpeningTheBox}/>
+                <Stack.Screen name="GermanCarLocated" component={GermanCarLocated}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

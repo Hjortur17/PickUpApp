@@ -28,6 +28,14 @@ import SpanishMissingKeyBox from './screens/es/MissingKeyBox';
 import SpanishCarLocated from './screens/es/CarLocated';
 import SpanishAfterOpeningTheBox from './screens/es/AfterOpeningTheBox';
 
+// French Pages
+import FrenchLandingScreen from './screens/fr/LandingScreen';
+import FrenchStepByStep from './screens/fr/StepByStep';
+import FrenchKeyBoxCode from './screens/fr/KeyBoxCode';
+import FrenchMissingKeyBox from './screens/fr/MissingKeyBox';
+import FrenchCarLocated from './screens/fr/CarLocated';
+import FrenchAfterOpeningTheBox from './screens/fr/AfterOpeningTheBox';
+
 // Views
 const StyledView = styled(View);
 const StyledButton = styled(TouchableOpacity);
@@ -74,6 +82,14 @@ export default function App() {
                 <Stack.Screen name="SpanishMissingKeyBox" component={SpanishMissingKeyBox}/>
                 <Stack.Screen name="SpanishAfterOpeningTheBox" component={SpanishAfterOpeningTheBox}/>
                 <Stack.Screen name="SpanishCarLocated" component={SpanishCarLocated}/>
+
+                {/* --- French Pages --- */}
+                <Stack.Screen name="FrenchLanding" component={FrenchLandingScreen}/>
+                <Stack.Screen name="FrenchStepByStep" component={FrenchStepByStep}/>
+                <Stack.Screen name="FrenchKeyBoxCode" component={FrenchKeyBoxCode}/>
+                <Stack.Screen name="FrenchMissingKeyBox" component={FrenchMissingKeyBox}/>
+                <Stack.Screen name="FrenchAfterOpeningTheBox" component={FrenchAfterOpeningTheBox}/>
+                <Stack.Screen name="FrenchCarLocated" component={FrenchCarLocated}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

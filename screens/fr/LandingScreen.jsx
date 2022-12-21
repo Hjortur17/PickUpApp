@@ -8,14 +8,14 @@ import {useFonts, LibreFranklin_800ExtraBold, LibreFranklin_600SemiBold} from '@
 import {Lato_400Regular, Lato_300Light} from '@expo-google-fonts/lato';
 
 const StyledView = styled(View);
-const StyledButton = styled(TouchableOpacity, 'rounded-lg p-4 bg-neutral-100 bg-opacity-50 text-neutral-900 justify-between w-80');
+const StyledButton = styled(TouchableOpacity, 'rounded-lg p-4 bg-neutral-100 bg-opacity-50 text-neutral-900 justify-between w-96');
 
 // Text
 const StyledText = styled(Text, 'font-normal text-base text-neutral-900');
 const StyledSubtitle = styled(Text, 'font-semibold text-lg text-neutral-900');
 const StyledBoldTitle = styled(Text, 'font-extrabold text-5xl text-neutral-900');
 
-export default function EnglishLandingScreen({ navigation }) {
+export default function SpanishLandingScreen({ navigation }) {
     let [fontsLoaded] = useFonts({
         LibreFranklin_800ExtraBold,
         LibreFranklin_600SemiBold,
@@ -48,44 +48,42 @@ export default function EnglishLandingScreen({ navigation }) {
                             d="M231.536 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273H436c6.627 0 12-5.373 12-12v-10c0-6.627-5.373-12-12-12H60.113L238.607 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"/>
                     </Svg>
 
-                    <StyledText style={{fontFamily: 'Lato_400Regular'}}>Go back</StyledText>
+                    <StyledText style={{fontFamily: 'Lato_400Regular'}}>Retourner</StyledText>
                 </StyledButton>
             </StyledView>
 
             <StyledView className='h-full flex justify-center items-center space-y-3 mt-8'>
-                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}}>How can I assist you?</StyledBoldTitle>
+                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}}>Comment puis je vous aider?</StyledBoldTitle>
 
-                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>For those who want step-by-step
-                    guide</StyledSubtitle>
+
+                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Pour ceux qui veulent un guide étape par étape</StyledSubtitle>
                 <StyledButton>
                     <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishStepByStep')}>
-                        Press here to see video</StyledText>
+                    onPress={() => navigation.navigate('FrenchStepByStep')}>Appuyez ici pour voir la vidéo</StyledText>
                 </StyledButton>
 
-                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Frequently asked
-                    questions</StyledSubtitle>
+                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Questions fréquemment posées</StyledSubtitle>
 
                 <StyledButton>
                     <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishKeyBoxCode')}>
-                        Where do I find my key box code?
+                    onPress={() => navigation.navigate('FrenchKeyBoxCode')}>
+                        Où puis-je trouver mon code de boîte à clés?
                     </StyledText>
                 </StyledButton>
                 <StyledButton>
                     <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishMissingKeyBox')}>Why haven’t I
-                        gotten any code?</StyledText>
+                    onPress={() => navigation.navigate('FrenchMissingKeyBox')}>
+                        Pourquoi n'ai-je pas reçu de code?
+                    </StyledText>
                 </StyledButton>
                 <StyledButton>
                     <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishAfterOpeningTheBox')}>What do I do after
-                        opening the box?</StyledText>
+                    onPress={() => navigation.navigate('FrenchAfterOpeningTheBox')}>
+                        Que dois-je faire après avoir ouvert la boîte ?</StyledText>
                 </StyledButton>
                 <StyledButton>
                     <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishCarLocated')}>Where is my car
-                        located?</StyledText>
+                    onPress={() => navigation.navigate('FrenchCarLocated')}>Où se trouve ma voiture ?</StyledText>
                 </StyledButton>
             </StyledView>
         </StyledView>

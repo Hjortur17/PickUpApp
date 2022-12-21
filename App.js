@@ -12,6 +12,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // Pages
 import HomeScreen from './screens/HomeScreen';
 import EnglishLandingScreen from './screens/en/LandingScreen';
+import EnglishStepByStep from './screens/en/StepByStep';
 import EnglishKeyBoxCode from './screens/en/KeyBoxCode';
 import EnglishMissingKeyBox from './screens/en/MissingKeyBox';
 
@@ -48,6 +49,7 @@ export default function App() {
 
                 {/* --- Pages --- */}
                 <Stack.Screen name="EnglishLanding" component={EnglishLandingScreen}/>
+                <Stack.Screen name="EnglishStepByStep" component={EnglishStepByStep}/>
                 <Stack.Screen name="EnglishKeyBoxCode" component={EnglishKeyBoxCode}/>
                 <Stack.Screen name="EnglishMissingKeyBox" component={EnglishMissingKeyBox}/>
             </Stack.Navigator>

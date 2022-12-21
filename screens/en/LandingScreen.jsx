@@ -60,8 +60,9 @@ export default function EnglishLandingScreen({ navigation }) {
                 <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>For those who want step-by-step
                     guide</StyledSubtitle>
                 <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>See Step-by-Step
-                        guide</StyledText>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
+                    onPress={() => navigation.navigate('EnglishStepByStep')}>
+                        Press here to see video</StyledText>
                 </StyledButton>
 
                 <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Frequently asked

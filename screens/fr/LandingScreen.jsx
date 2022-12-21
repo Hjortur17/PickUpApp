@@ -57,33 +57,28 @@ export default function SpanishLandingScreen({ navigation }) {
 
 
                 <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Pour ceux qui veulent un guide étape par étape</StyledSubtitle>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('FrenchStepByStep')}>Appuyez ici pour voir la vidéo</StyledText>
+                <StyledButton onPress={() => navigation.navigate('FrenchStepByStep')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>Appuyez ici pour voir la vidéo</StyledText>
                 </StyledButton>
 
                 <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Questions fréquemment posées</StyledSubtitle>
 
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('FrenchKeyBoxCode')}>
+                <StyledButton onPress={() => navigation.navigate('FrenchKeyBoxCode')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         Où puis-je trouver mon code de boîte à clés?
                     </StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('FrenchMissingKeyBox')}>
+                <StyledButton onPress={() => navigation.navigate('FrenchMissingKeyBox')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         Pourquoi n'ai-je pas reçu de code?
                     </StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('FrenchAfterOpeningTheBox')}>
+                <StyledButton onPress={() => navigation.navigate('FrenchAfterOpeningTheBox')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         Que dois-je faire après avoir ouvert la boîte ?</StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('FrenchCarLocated')}>Où se trouve ma voiture ?</StyledText>
+                <StyledButton onPress={() => navigation.navigate('FrenchCarLocated')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>Où se trouve ma voiture ?</StyledText>
                 </StyledButton>
             </StyledView>
         </StyledView>

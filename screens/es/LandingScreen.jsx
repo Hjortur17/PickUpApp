@@ -15,7 +15,7 @@ const StyledText = styled(Text, 'font-normal text-base text-neutral-900');
 const StyledSubtitle = styled(Text, 'font-semibold text-lg text-neutral-900');
 const StyledBoldTitle = styled(Text, 'font-extrabold text-5xl text-neutral-900');
 
-export default function SpanishLandingScreen({ navigation }) {
+export default function SpanishLandingScreen({navigation}) {
     let [fontsLoaded] = useFonts({
         LibreFranklin_800ExtraBold,
         LibreFranklin_600SemiBold,
@@ -53,37 +53,38 @@ export default function SpanishLandingScreen({ navigation }) {
             </StyledView>
 
             <StyledView className='h-full flex justify-center items-center space-y-3 mt-8'>
-                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}}>Cómo puedo ayudarle?</StyledBoldTitle>
+                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}}>Cómo puedo
+                    ayudarle?</StyledBoldTitle>
 
+                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Para aquellos que quieren guía
+                    paso a paso</StyledSubtitle>
 
-                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Para aquellos que quieren guía paso a paso</StyledSubtitle>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('SpanishStepByStep')}>Presiona aquí para ver video</StyledText>
+                <StyledButton onPress={() => navigation.navigate('SpanishStepByStep')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>Presiona aquí para
+                        ver video</StyledText>
                 </StyledButton>
 
-                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Preguntas frecuentes</StyledSubtitle>
+                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Preguntas
+                    frecuentes</StyledSubtitle>
 
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('SpanishKeyBoxCode')}>
+                <StyledButton onPress={() => navigation.navigate('SpanishKeyBoxCode')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         ¿Dónde encuentro el código de mi caja de llaves?
                     </StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('SpanishMissingKeyBox')}>
+
+                <StyledButton onPress={() => navigation.navigate('SpanishMissingKeyBox')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         ¿Por qué no he recibido ningún código?
                     </StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('SpanishAfterOpeningTheBox')}>
+                <StyledButton onPress={() => navigation.navigate('SpanishAfterOpeningTheBox')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         ¿Qué hago después de abrir la caja?</StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('SpanishCarLocated')}>¿Dónde se encuentra mi coche?</StyledText>
+                <StyledButton onPress={() => navigation.navigate('SpanishCarLocated')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>¿Dónde se
+                        encuentra mi coche?</StyledText>
                 </StyledButton>
             </StyledView>
         </StyledView>

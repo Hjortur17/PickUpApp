@@ -56,31 +56,26 @@ export default function GermanLandingScreen({ navigation }) {
                 <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}}>Wie kann ich Ihnen helfen?</StyledBoldTitle>
 
                 <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Für diejenigen, die eine Schritt-für-Schritt-Anleitung wünschen</StyledSubtitle>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishStepByStep')}>
+                <StyledButton onPress={() => navigation.navigate('EnglishStepByStep')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         Drücken Sie hier, um das Video zu sehen</StyledText>
                 </StyledButton>
 
                 <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pt-8'>Häufig gestellte Fragen</StyledSubtitle>
 
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishKeyBoxCode')}>
+                <StyledButton onPress={() => navigation.navigate('EnglishKeyBoxCode')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>
                         Wo finde ich meinen Schlüsselbox-Code?
                     </StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishMissingKeyBox')}>Warum habe ich keinen Code bekommen?</StyledText>
+                <StyledButton onPress={() => navigation.navigate('EnglishMissingKeyBox')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>Warum habe ich keinen Code bekommen?</StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishAfterOpeningTheBox')}>Was mache ich nach dem Öffnen der Box?</StyledText>
+                <StyledButton onPress={() => navigation.navigate('EnglishAfterOpeningTheBox')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>Was mache ich nach dem Öffnen der Box?</StyledText>
                 </StyledButton>
-                <StyledButton>
-                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'
-                    onPress={() => navigation.navigate('EnglishCarLocated')}>Wo steht mein Auto?</StyledText>
+                <StyledButton onPress={() => navigation.navigate('EnglishCarLocated')}>
+                    <StyledText style={{fontFamily: 'LibreFranklin_600SemiBold'}} className='mx-auto'>Wo steht mein Auto?</StyledText>
                 </StyledButton>
             </StyledView>
         </StyledView>

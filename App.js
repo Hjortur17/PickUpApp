@@ -1,8 +1,5 @@
-import Svg, {
-    Path,
-    G,
-} from 'react-native-svg';
-import {TouchableOpacity, Image, Text, View} from 'react-native';
+import React from "react";
+import {TouchableOpacity, Text, View} from 'react-native';
 import {styled} from "nativewind";
 import {useFonts, LibreFranklin_800ExtraBold, LibreFranklin_600SemiBold} from '@expo-google-fonts/libre-franklin';
 import {Lato_400Regular, Lato_300Light} from '@expo-google-fonts/lato';

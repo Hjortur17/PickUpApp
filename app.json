@@ -1,15 +1,16 @@
 {
   "expo": {
-    "name": "PickUpApp",
-    "slug": "PickUpApp",
+    "name": "Geysir Car Rental | Pick-up app",
+    "slug": "geysir-car-rental-pick-up-app",
+    "description": "App used by Geysir Car Rental assist customers picking up from a contactless key pick-up",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#C23A2C"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,7 +24,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#C23A2C"
       }
     },
     "web": {

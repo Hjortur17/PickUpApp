@@ -21,7 +21,7 @@ export default function SpanishMissingKeyBox({navigation}) {
     }
 
     return (
-        <StyledView id='container' className="max-w-screen-lg w-full mx-auto relative">
+        <StyledView id='container' className="max-w-screen-md w-full mx-auto relative">
             <Navbar text='Retroceder' navigation={navigation} size='36' />
 
             <StyledView className='h-full flex justify-center items-center space-y-3 max-w-screen-md mx-auto'>

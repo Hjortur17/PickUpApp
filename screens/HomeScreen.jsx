@@ -28,7 +28,7 @@ export default function HomeScreen({ navigation }) {
     }
 
     return (
-        <StyledView id='container' className="max-w-screen-lg w-full mx-auto relative">
+        <StyledView id='container' className="max-w-screen-md w-full mx-auto relative">
             <Image
                 className='w-20 h-32 object-bottom absolute'
                 source={require('../assets/logo.jpg')}

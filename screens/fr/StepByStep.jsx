@@ -31,7 +31,7 @@ export default function FrenchStepByStep({navigation}) {
                     Guide étape par étape
                 </StyledBoldTitle>
 
-                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pb-8'>
+                <StyledSubtitle style={{fontFamily: 'Lato_400Regular'}} className='pb-3'>
                     La vidéo est en anglais
                 </StyledSubtitle>
 

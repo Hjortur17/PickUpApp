@@ -26,7 +26,7 @@ export default function EnglishStepByStep({navigation}) {
             <Navbar text='Go Back' navigation={navigation} size='32' />
 
             <StyledView className='h-full flex justify-center items-center space-y-3 max-w-screen-md mx-auto'>
-                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}} className='mb-8'>
+                <StyledBoldTitle style={{fontFamily: 'LibreFranklin_800ExtraBold'}} className='mb-3'>
                     Step-By-Step Guide
                 </StyledBoldTitle>
 
